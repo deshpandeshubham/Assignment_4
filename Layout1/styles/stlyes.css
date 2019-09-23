@@ -1,0 +1,55 @@
+body {
+    width: 960px;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section, nav, main, footer {
+    display: grid;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+div, footer{
+    background: silver;
+}
+
+nav {
+    grid-template: 80px / 200px 1fr 3fr;
+    grid-gap: 10px;
+}
+
+.navigation {
+    height: 50px;
+    align-self: center;
+    grid-column-start: 3;
+}
+
+nav ul{
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template: auto / repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-content: center;
+}
+
+section div {
+    height: 400px;
+}
+
+main {
+    grid-template: 200px / 1fr 1fr;
+    grid-gap: 10px;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+footer {
+    justify-items: center;
+}
